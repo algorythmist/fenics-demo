@@ -1,4 +1,6 @@
-# Installation
+# Demo of FEniCS library for solving PDEs
+
+## Installation
 
 > docker pull quay.io/fenicsproject/stable:latest
 
@@ -10,6 +12,8 @@ To view plots on web browser:
 
 To start jupyter notebooks:
 > docker run --name fenics-notebook -w /home/fenics -v ${pwd}:/home/fenics/shared -d -p 127.0.0.1:8888:8888 quay.io/fenicsproject/stable 'jupyter-notebook --ip=0.0.0.0'
+
+## Running Jupyter notebooks
 
 Procedure for finding notebooks URL:
 > docker ps 
@@ -28,7 +32,6 @@ to login with a token:
             http://0.0.0.0:8888/?token=b8d00059b0a71a94edd67d03d8ebecaa09d8c28eb7e7a0a9
 
 ```
-
 
 To do all of this in one command:
 
