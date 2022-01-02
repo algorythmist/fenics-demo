@@ -1,0 +1,22 @@
+\\
+-\nabla^2 u(x) = f(x) \textrm{ in } S\\
+u(x) = u_D(x) \textrm{ on } \partial S
+
+
+\\
+-\int_S v\nabla^2 u = \int_S v f\\
+u(x) = u_D(x) \textrm{ on } \partial S\\
+v(x) = 0 \textrm{ on } \partial S\\
+
+\nabla(v \cdot \nabla u) = v \nabla^2 u + \nabla v \cdot \nabla u \rightarrow
+ v \nabla^2 u  = \nabla(v \cdot \nabla u) - \nabla v \cdot \nabla u
+
+-\int_S v\nabla^2 u = -\int_S \nabla(v \cdot \nabla u) + \int_S \nabla v \cdot \nabla u
+
+\int_S \nabla(v \cdot \nabla u) = \int_{\partial S}v \cdot \nabla u
+
+\int_S \nabla v \cdot \nabla u = \int_S v f
+
+\hat{u}(x) = \sum_i w_i v_i(x)
+
+\sum_i w_i \int_S \nabla v_j \cdot \nabla v_i = \int_S v_j f
