@@ -17,6 +17,10 @@ v(x) = 0 \textrm{ on } \partial S\\
 
 \int_S \nabla v \cdot \nabla u = \int_S v f
 
-\hat{u}(x) = \sum_i w_i v_i(x)
+\hat{u}(x) = \sum_i w_i \hat{v}_i(x)
 
-\sum_i w_i \int_S \nabla v_j \cdot \nabla v_i = \int_S v_j f
+\sum_i w_i \int_S \nabla \hat{v}_j \cdot \nabla \hat{v}_i = \int_S \hat{v}_j f
+
+\\
+A_{ij} = \int_S \nabla \hat{v}_j \cdot \nabla \hat{v}_i\\
+b_j = \int_S  \hat{v}_j f
